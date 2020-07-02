@@ -1,0 +1,48 @@
+{
+  "name": "wdio-boilerplate",
+  "version": "1.0.0",
+  "description": "WebDriver IO Template Project ",
+  "main": "index.js",
+  "scripts": {
+    "report": "allure generate allure-results --clean && allure open",
+    "test": "wdio wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/st-newyork/wdio-boilerplate.git"
+  },
+  "keywords": [
+    "webdriver",
+    "mocha",
+    "chai",
+    "BDD",
+    "test",
+    "automation"
+  ],
+  "author": "Sergey Troyeglazov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/st-newyork/wdio-boilerplate/issues"
+  },
+  "homepage": "https://github.com/st-newyork/wdio-boilerplate#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/register": "^7.10.1",
+    "@wdio/allure-reporter": "^6.1.14",
+    "@wdio/cli": "^6.1.17",
+    "@wdio/local-runner": "^6.1.17",
+    "@wdio/mocha-framework": "^6.1.17",
+    "@wdio/spec-reporter": "^6.1.14",
+    "@wdio/sync": "^6.1.14",
+    "allure-commandline": "^2.13.0",
+    "chai": "^4.2.0",
+    "chromedriver": "^83.0.0",
+    "prettier": "^2.0.5",
+    "wdio-chromedriver-service": "^6.0.3"
+  },
+  "dependencies": {
+    "npm-check-updates": "^7.0.1"
+  }
+}

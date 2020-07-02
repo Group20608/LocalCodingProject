@@ -1,0 +1,7 @@
+.idea
+package-lock.json
+node_modules
+allure-report
+allure-results
+# Local Netlify folder
+.netlify
