@@ -1,6 +1,8 @@
-const user = {
+const newUser = {
 email: "",
 name: "",
 password: "",
 }
+
+
 
