@@ -1,7 +1,7 @@
 import HomePage from "../page/HomePage";
 
-describe('TEST', () => {
-  it('open ', () =>{
+xdescribe('TEST', () => {
+  xit('open ', () =>{
     HomePage.open();
    
   })
