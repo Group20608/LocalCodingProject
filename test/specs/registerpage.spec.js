@@ -1,5 +1,6 @@
 import {expect} from 'chai';
 import RegisterPage from "../page/RegisterPage";
+import ProfilePage from "../page/ProfilePage";
 import {dataRegisterPage} from "../data/RegisterData";
 
 
@@ -15,6 +16,9 @@ describe('USER REGISTER', () => {
     it('should register a new user ',() => {
        RegisterPage.newUserRegister();
        //expect(RegisterPage.header.getText()).eq(dataRegisterPage.headerNameUser);
+    });
 
+    it('should logout a new user ',() => {
+        ProfilePage.userLogout();
     });
 });
