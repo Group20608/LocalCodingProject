@@ -18,7 +18,7 @@ describe('USER REGISTER', () => {
        //expect(RegisterPage.header.getText()).eq(dataRegisterPage.headerNameUser);
     });
 
-    it('should logout a new user ',() => {
+    after('logout',() => {
         ProfilePage.userLogout();
     });
 });
