@@ -9,11 +9,12 @@ describe('USER REGISTER', () => {
         RegisterPage.open();
     });
     it('should go to the page Register ',() => {
-        expect(RegisterPage.headerRegister.getText()).eq(dataRegisterPage.header);
+        expect(RegisterPage.header.getText()).eq(dataRegisterPage.header);
 
     });
     it('should register a new user ',() => {
        RegisterPage.newUserRegister();
+       //expect(RegisterPage.header.getText()).eq(dataRegisterPage.headerNameUser);
 
     });
 });

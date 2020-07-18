@@ -3,14 +3,14 @@ import {dataRegisterPage} from "../data/RegisterData";
 
 class RegisterPage extends BasePage {
 
-    get headerRegister(){return $('h1')};
     get firstNameInput(){return $('#user_login_firstName')};
     get lastNameInput(){return $('#user_login_lastName')};
     get emailInput(){return $('#user_login_email')};
     get passwordInput(){return $('[type="password"]')};
     get selectedClick(){return $('#user_login_agreement')};
     get buttonTypeSubmit(){return $('[type="submit"]')};
-    get headerRegisterStepTwo(){return $('.text-center.mb-lg-5')};
+    get phoneInput(){return $('#user_login_phone')};
+    get submitFinishRegister(){return $('[type="submit"]')};
 
 
 
@@ -21,7 +21,11 @@ class RegisterPage extends BasePage {
         this.passwordInput.setValue(dataRegisterPage.password);
         this.selectedClick.click();
         this.buttonTypeSubmit.click();
-        this.verifyElementIsDisplayed(this.headerRegisterStepTwo);
+        this.phoneInput.setValue(dataRegisterPage.phone);
+        this.submitFinishRegister.click();
+        this.verifyElementText(this.header,dataRegisterPage.headerNameUser)
+
+
     }
 
     open(){

@@ -10,7 +10,10 @@ const dataRegisterPage = {
     LastName,
     email,
     password,
+    phone:'12334444422',
+    headerNameUser:`${FirstName} ${LastName}`,
 };
+
 export {dataRegisterPage};
 
 
