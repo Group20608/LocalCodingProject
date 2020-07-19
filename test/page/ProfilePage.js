@@ -1,4 +1,5 @@
 import BasePage from "./BasePage";
+import {userLogin} from "../data/UserLoginData";
 
 class ProfilePage extends BasePage{
 
@@ -9,7 +10,7 @@ class ProfilePage extends BasePage{
   userLogout(){
     this.dropDownUserMenu.click();
     this.logout.click();
-    this.verifyElementText(this.header, 'Welcome back!');
+    this.verifyElementText(this.header, userLogin.headerText);
   }
 
   open() {
