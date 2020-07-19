@@ -12,10 +12,6 @@ class ProfilePage extends BasePage{
     this.logout.click();
     this.verifyElementText(this.header, userLogin.headerText);
   }
-
-  open() {
-    super.open('/');
-  }
 }
 
 export default new ProfilePage();
