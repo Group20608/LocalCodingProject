@@ -10,6 +10,11 @@ export default class BasePage {
         browser.waitUntil(() => element.getText() === text);
     }
 
+    isClickableBtn(element){
+        browser.waitUntil(() => element.isClickable())
+        element.click();
+    }
+
     open(path) {
         browser.url(path)
     }

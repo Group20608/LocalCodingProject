@@ -1,5 +1,5 @@
 import BasePage from "./BasePage";
-import {dataRegisterPage} from "../data/RegisterData";
+import {newUser} from "../data/RegisterData";
 
 class RegisterPage extends BasePage {
 
@@ -15,15 +15,15 @@ class RegisterPage extends BasePage {
 
 
     newUserRegister(){
-        this.firstNameInput.setValue(dataRegisterPage.FirstName);
-        this.lastNameInput.setValue(dataRegisterPage.LastName);
-        this.emailInput.setValue(dataRegisterPage.email);
-        this.passwordInput.setValue(dataRegisterPage.password);
+        this.firstNameInput.setValue(newUser.FirstName);
+        this.lastNameInput.setValue(newUser.LastName);
+        this.emailInput.setValue(newUser.email);
+        this.passwordInput.setValue(newUser.password);
         this.selectedClick.click();
         this.buttonTypeSubmit.click();
-        this.phoneInput.setValue(dataRegisterPage.phone);
+        this.phoneInput.setValue(newUser.phone);
         this.submitFinishRegister.click();
-        this.verifyElementText(this.header,dataRegisterPage.headerNameUser)
+        this.verifyElementText(this.header,newUser.headerNameUser)
 
 
     }

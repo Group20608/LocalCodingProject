@@ -4,7 +4,7 @@ const LastName = faker.name.lastName();
 const email = faker.internet.email();
 const password = faker.internet.password();
 
-const dataRegisterPage = {
+const newUser = {
     header: 'Create an account',
     FirstName,
     LastName,
@@ -14,6 +14,6 @@ const dataRegisterPage = {
     headerNameUser:`${FirstName} ${LastName}`,
 };
 
-export {dataRegisterPage};
+export {newUser};
 
 
