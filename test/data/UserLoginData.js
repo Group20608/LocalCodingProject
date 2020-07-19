@@ -1,4 +1,10 @@
 const userLogin = {
     headerText: 'Welcome back!',
 }
-export {userLogin};
+
+const userAdmin = {
+    email: 'gena@zeleniy.com',
+    password: '123456',
+
+}
+export {userLogin, userAdmin};

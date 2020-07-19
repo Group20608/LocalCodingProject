@@ -25,7 +25,7 @@ describe('USER REGISTER', () => {
 });
 
 describe('NEW USER LOGIN', () => {
-    it('should user login ', () => {
+    it('should new user login ', () => {
         LoginPage.userLogin(newUser);
     });
 
