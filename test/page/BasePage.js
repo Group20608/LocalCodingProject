@@ -15,6 +15,11 @@ export default class BasePage {
         element.click();
     }
 
+    verifyTitle(title){
+        this.open();
+        browser.waitUntil(() => browser.getTitle() === title );
+    }
+
     open(path) {
         browser.url(path)
     }
