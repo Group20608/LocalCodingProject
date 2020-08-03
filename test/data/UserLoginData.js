@@ -3,7 +3,7 @@ const userLogin = {
 }
 
 const userAdmin = {
-    email: 'gena@zeleniy.com',
+    email: 'gmbh1@ro.ru',
     password: '123456',
 
 }
