@@ -44,6 +44,7 @@
     "wdio-chromedriver-service": "^6.0.3"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "babel": "^6.23.0",
     "faker": "^4.1.0",
     "geckodriver": "^1.19.1",
