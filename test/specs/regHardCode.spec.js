@@ -1,6 +1,5 @@
 import axios from 'axios';
-const tokenAdmin =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdtYmgxQHJvLnJ1IiwidXNlcklkIjoiNWYwN2VlZmI2MzdkYjMwMGVlMjdkMjlmIiwiY29kZXdhcnNJZCI6bnVsbCwiaWF0IjoxNTk2NDYzMDgzLCJleHAiOjE1OTY3MjIyODN9.QX6rJwAraeo0l-fZxN7LdGHKeghGfCBzLmvLYsOsENI';
+import {expect} from 'chai';
 const email = (Math.random() * 10000).toFixed() + '@gmail.com';
 
 describe('REG PAGE', () => {
@@ -9,7 +8,8 @@ describe('REG PAGE', () => {
   });
   it('should register', () => {
     const submitBtn = $('[type="submit"]');
-    email, $('#user_login_firstName').setValue('Ashot');
+    email,
+    $('#user_login_firstName').setValue('Ashot');
     $('#user_login_lastName').setValue('Grigoryan');
     $('#user_login_email').setValue(email);
     $('[type="password"]').setValue('123456');
@@ -27,7 +27,7 @@ describe('REG PAGE', () => {
       method: 'get',
       url: `https://server-stage.pasv.us/user/email/${email}`,
       headers: {
-        Authorization: tokenAdmin,
+        Authorization: process.env.TOKEN_ADMIN
       },
     })
       // .then(res => {return (res)})
@@ -43,7 +43,7 @@ describe('REG PAGE', () => {
       method: 'delete',
       url: `https://server-stage.pasv.us/user/email/${email}`,
       headers: {
-        Authorization: tokenAdmin,
+        Authorization: process.env.TOKEN_ADMIN,
       },
     })
       .then(res => res.data)

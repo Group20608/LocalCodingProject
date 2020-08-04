@@ -22,10 +22,10 @@ exports.config = {
   //
   specs: [
       //'./test/specs/*.js'
-    './test/specs/userlogin.spec.js',
+    //'./test/specs/userlogin.spec.js',
     //'./test/specs/userregister.spec.js',
     //'./test/specs/homepage.spec.js'
-    //'./test/specs/reg.spec.js'
+    './test/specs/regHardCode.spec.js'
 
   ],
   // Patterns to exclude.
@@ -177,7 +177,8 @@ exports.config = {
    * @param {Array.<Object>} capabilities list of capabilities details
    * @param {Array.<String>} specs List of spec file paths that are to be run
    */
-   //before: function (capabilities, specs) {},
+  // before: function (capabilities, specs) {
+  // },
   /**
    * Runs before a WebdriverIO command gets executed.
    * @param {String} commandName hook command name
@@ -194,7 +195,7 @@ exports.config = {
   /**
    * Function to be executed before a test (in Mocha/Jasmine) starts.
    */
-  beforeTest: hookBefore(),
+  beforeTest: hookBefore,
   /**
    * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
    * beforeEach in Mocha)

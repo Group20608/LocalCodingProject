@@ -1,3 +1,4 @@
+import {expect} from 'chai';
 import { userAdmin } from '../data/UserLoginData';
 import LoginPage from '../page/LoginPage';
 
