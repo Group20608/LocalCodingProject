@@ -21,10 +21,10 @@ exports.config = {
   //
   specs: [
       //'./test/specs/*.js'
-    //'./test/specs/userlogin.spec.js',
+    './test/specs/userlogin.spec.js',
     //'./test/specs/userregister.spec.js',
     //'./test/specs/homepage.spec.js'
-    './test/specs/reg.spec.js'
+    //'./test/specs/reg.spec.js'
 
   ],
   // Patterns to exclude.
