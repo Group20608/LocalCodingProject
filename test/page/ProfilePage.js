@@ -3,8 +3,8 @@ import {userLogin} from "../data/UserLoginData";
 
 class ProfilePage extends BasePage{
 
-  get dropDownUserMenu(){return $('.ant-dropdown-link.ant-dropdown-trigger')}
-  get logout(){return $$('li[role="menuitem"]')[2]}
+  get dropDownUserMenu(){return $('[aria-label="down"]')}
+  get logout(){return $('[data-qa="logout"]')}
 
 
   userLogout(){
