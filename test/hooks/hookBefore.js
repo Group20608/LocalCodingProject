@@ -1,7 +1,7 @@
 const axios = require ("axios");
 const expect = require ("chai").expect;
 
-module.exports = async function (capabilities, specs) {
+module.exports = async  (capabilities, specs) => {
     const response = await axios({
         method: 'post',
         url: `https://server-stage.pasv.us/user/login`,
