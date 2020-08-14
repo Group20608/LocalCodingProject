@@ -25,10 +25,11 @@ exports.config = {
     //'./test/specs/userlogin.spec.js',
     //'./test/specs/userregister.spec.js',
     //'./test/specs/homepage.spec.js'
-    './test/specs/regHardCode.spec.js'
+    //'./test/specs/regHardCode.spec.js'
+    './test/api/apiTest.js'
 
   ],
-  // Patterns to exclude.
+  // Patterns to exclude
   exclude: [
     // 'path/to/excluded/files'
   ],
