@@ -58,8 +58,9 @@ exports.config = {
   capabilities: [{
     browserName: 'chrome',
   }],
-  // capabilities: [{ -- ОДНОВРЕМЕННО CHROME and FIREFOX
-  //
+
+  //ОДНОВРЕМЕННО CHROME and FIREFOX
+  // capabilities: [{
   //   browserName: 'chrome',
   //   specs: [
   //     './test/specs/reg.spec.js'],

@@ -2,6 +2,7 @@ import axios from 'axios';
 import { expect } from 'chai';
 
 describe('CREATED DAY REPORT', () => {
+  console.log('AD' + process.env.TOKEN_ADMIN)
   it('should created day report', async () => {
     const diary = await axios({
       method: 'post',
@@ -18,7 +19,9 @@ describe('CREATED DAY REPORT', () => {
     })
       .then(res => res.data)
       .catch(err => err);
-    console.log(diary);
+    console.log('diary' + diary);
     expect(diary.message).eq('Diary created');
   });
 });
+
+//wdio wdio.conf.js --spec ./test/api/apiTest.js
